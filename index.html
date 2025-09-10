@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/layout.css" />
+    <script type="module" src="./components/header.js"></script>
+  </head>
+  <body>
+    <site-header></site-header>
+    <!-- banner -->
+    <section class="banner">
+      <div class="banner__inner">
+        <ul class="banner__list">
+          <!-- 배너 이미지, 컨텐츠 -->
+          <li class="banner__item">
+            <div class="banner__content container--md">
+              <h2 class="banner__title">
+                Development of Stem Cell<br />
+                Therapy That is Safe for<br />Immune Rejection
+              </h2>
+              <p class="banner__desc">
+                STEMMedicare has been steadily researching and developing to
+                overcome typical intractable diseases through immune-tolerant
+                cells.
+              </p>
+            </div>
+            <img
+              class="banner__image image"
+              src="./assets/images/main.png"
+              alt=""
+            />
+          </li>
+        </ul>
+
+        <!-- banner__controls -->
+        <div class="banner__controls container--md">
+          <button type="button" class="banner__btn banner__btn--prev">
+            <span class="hidden">prev</span>
+          </button>
+          <span class="banner__index">01</span>
+          <div class="banner__progress progress">
+            <div class="progress__fill"></div>
+          </div>
+          <span class="banner__index">03</span>
+          <button type="button" class="banner__btn banner__btn--next">
+            <span class="hidden">next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- r&d-pipeline -->
+    <section class="pipeline" id="r&d-pipeline">
+      <h2 class="pipeline__title main-title" id="r&d-pipeline">
+        R&amp;D PIPELINE
+      </h2>
+      <div class="pipeline__inner container--md">
+        <ul class="pipeline__cards" role="list">
+          <!-- pipeline__card -->
+          <li class="pipeline__card">
+            <details class="pipeline-card" name="pipeline">
+              <summary class="pipeline-card__summary">
+                <span
+                  class="pipeline-card__icon background"
+                  aria-hidden="true"
+                ></span>
+                <h3 class="pipeline-card__title">Atopic<br />Dermatitis</h3>
+                <span class="pipeline-card__descript">
+                  피부장벽 기능 복원 및<br />가려움증 완화 효능
+                </span>
+                <span
+                  class="pipeline-card__toggle background"
+                  aria-hidden="true"
+                >
+                </span>
+              </summary>
+            </details>
+          </li>
+          <li class="pipeline__card">
+            <details class="pipeline-card" name="pipeline">
+              <summary class="pipeline-card__summary">
+                <span
+                  class="pipeline-card__icon background"
+                  aria-hidden="true"
+                ></span>
+                <h3 class="pipeline-card__title">Osteoartiritis</h3>
+                <span class="pipeline-card__descript">
+                  면역거부반응이 없는<br />세포외소포를 이용한 반복 투여가
+                  가능한<br />OA 치료제의 IND 승인 획득
+                </span>
+                <span
+                  class="pipeline-card__toggle background"
+                  aria-hidden="true"
+                >
+                </span>
+              </summary>
+            </details>
+          </li>
+          <li class="pipeline__card">
+            <details class="pipeline-card" name="pipeline">
+              <summary class="pipeline-card__summary">
+                <span
+                  class="pipeline-card__icon background"
+                  aria-hidden="true"
+                ></span>
+                <h3 class="pipeline-card__title">Anti-Cancer</h3>
+                <span class="pipeline-card__descript">
+                  암세포 대사 정상화 인자 함유<br />
+                  항암용 세포외소포 생산을 위한<br />
+                  체외 배양 시스템 확립
+                </span>
+                <span
+                  class="pipeline-card__toggle background"
+                  aria-hidden="true"
+                >
+                </span>
+              </summary>
+            </details>
+          </li>
+          <li class="pipeline__card">
+            <details class="pipeline-card" name="pipeline">
+              <summary class="pipeline-card__summary">
+                <span
+                  class="pipeline-card__icon background"
+                  aria-hidden="true"
+                ></span>
+                <h3 class="pipeline-card__title">
+                  Neurodegerative<br />
+                  Diseases
+                </h3>
+                <span class="pipeline-card__descript">
+                  줄기세포 유래 세포외소포 함유<br />
+                  신경질환 EV 치료제
+                </span>
+                <span
+                  class="pipeline-card__toggle background"
+                  aria-hidden="true"
+                >
+                </span>
+              </summary>
+            </details>
+          </li>
+          <li class="pipeline__card">
+            <details class="pipeline-card" name="pipeline">
+              <summary class="pipeline-card__summary">
+                <span
+                  class="pipeline-card__icon background"
+                  aria-hidden="true"
+                ></span>
+                <h3 class="pipeline-card__title">
+                  Vaccine<br />
+                  Adjuvant
+                </h3>
+                <span class="pipeline-card__descript">
+                  COVID-19를 비롯한<br />
+                  감염성 질환 EV 치료제
+                </span>
+                <span
+                  class="pipeline-card__toggle background"
+                  aria-hidden="true"
+                >
+                </span>
+              </summary>
+            </details>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- whatwedo -->
+    <section class="whatwedo">
+      <h2 class="whatwedo__title main-title" id="what-we-do">What we do</h2>
+      <div class="whatwedo__inner container--md">
+        <ul class="whatwedo__cards">
+          <!-- whatwedo__card -->
+          <li class="whatwedo__card">
+            <a
+              class="whatwedo-card"
+              href="/"
+              aria-label="Retro-Genesis Therapy 자세히 보기"
+            >
+              <div class="whatwedo-card__image background"></div>
+              <div class="whatwedo-card__content">
+                <div class="whatwedo-card__title">
+                  Retro-Genesis<br />Therapy
+                </div>
+                <span class="whatwedo-card__more">View Detail</span>
+              </div>
+            </a>
+          </li>
+
+          <li class="whatwedo__card">
+            <a
+              class="whatwedo-card"
+              href="/"
+              aria-label="Overcomming Immune Rejection 자세히 보기"
+            >
+              <div class="whatwedo-card__image background"></div>
+              <div class="whatwedo-card__content">
+                <div class="whatwedo-card__title">
+                  Overcomming<br />
+                  Immune Rejection
+                </div>
+                <span class="whatwedo-card__more">View Detail</span>
+              </div>
+            </a>
+          </li>
+
+          <li class="whatwedo__card">
+            <a
+              class="whatwedo-card"
+              href="/"
+              aria-label="Extracellular Vesicles Therapy 자세히 보기"
+            >
+              <div class="whatwedo-card__image background"></div>
+              <div class="whatwedo-card__content">
+                <div class="whatwedo-card__title">
+                  Extracellular<br />
+                  Vesicles Therapy
+                </div>
+                <span class="whatwedo-card__more">View Detail</span>
+              </div>
+            </a>
+          </li>
+
+          <li class="whatwedo__card">
+            <a
+              class="whatwedo-card"
+              href="/"
+              aria-label="Primal Immune System 자세히 보기"
+            >
+              <div class="whatwedo-card__image background"></div>
+              <div class="whatwedo-card__content">
+                <div class="whatwedo-card__title">
+                  Primal Immune<br />
+                  System
+                </div>
+                <span class="whatwedo-card__more">View Detail</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
