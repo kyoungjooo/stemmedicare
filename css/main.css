@@ -541,3 +541,90 @@ body {
   background-image: url("../assets/images/main/Inquiry.png");
   bottom: 2.2rem;
 }
+/* footer */
+
+.footer {
+  background-color: #303030;
+}
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+}
+.footer__nav {
+  display: flex;
+  justify-content: center;
+  border-bottom: 0.5px solid var(--gray-06);
+  gap: 6rem;
+}
+.footer__nav-item > a {
+  color: var(--gray-03);
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  padding-top: 2rem;
+  padding-bottom: 1.4rem;
+  display: inline-block;
+}
+.footer__nav-item:not(:first-child) > a::before {
+  content: "|";
+  position: relative;
+  left: -3rem;
+  color: var(--gray-06);
+}
+.footer__contents {
+  display: flex;
+  align-items: flex-end;
+  padding-top: 5rem;
+  padding-bottom: 7rem;
+}
+.footer__contents-aside {
+  display: grid;
+  gap: 3rem;
+  color: var(--gray-03);
+  grid-template-columns: repeat(2, 1fr);
+}
+.footer__info-brand {
+  font-weight: 500;
+}
+.footer__contact {
+  display: flex;
+  gap: 2rem;
+  margin-top: 0.5rem;
+}
+.footer__contents-aside > p {
+  font-size: 3.7rem;
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--white);
+}
+.footer__name {
+  font-size: 2.4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #dedede;
+  opacity: 0.57;
+  margin-bottom: 1rem;
+}
+.footer__info-brand {
+  font-size: 1.6rem;
+}
+.footer__contact-label {
+  font-weight: 700;
+  color: var(--orange-01);
+  margin-right: 0.4rem;
+}
+.footer__logo {
+  color: var(--white);
+  background-image: url("../assets/images/logo_footer.svg");
+  width: 214px;
+  height: 38px;
+}
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer__copyright {
+  font-size: 1.4rem;
+  color: var(--gray-06);
+}
