@@ -2,6 +2,9 @@
 
 /* 너비가 1280px 이하일 때 */
 @media screen and (max-width: 1280px) {
+  .container--md {
+    padding-inline: 100px;
+  }
   .news-notice__link {
     aspect-ratio: auto;
   }
@@ -13,5 +16,112 @@
   }
   .news-notice__link:nth-child(2) .link-icon {
     width: 8.5rem;
+  }
+  .footer__contents-aside {
+    grid-template-columns: auto;
+  }
+}
+@media screen and (max-width: 999px) {
+  html {
+    font-size: 9px;
+  }
+  .container--md {
+    padding-inline: 50px;
+  }
+  .header__nav {
+    display: none;
+  }
+  .pipeline__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .whatwedo__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 8px;
+  }
+  .container--md {
+    padding-inline: 20px;
+  }
+  .header__inner {
+    justify-content: center;
+  }
+  .banner__title {
+    max-width: unset;
+  }
+  .banner__content {
+    align-items: center;
+    text-align: center;
+  }
+  .banner__controls {
+    justify-content: center;
+  }
+  .news-notice__inner {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .news-notice__contents {
+    height: 200px;
+    margin-top: 8px;
+  }
+  .core-tech__content {
+    position: relative;
+    inset: unset;
+  }
+  .core-tech__lists {
+    width: auto;
+  }
+  .core-tech__images {
+    gap: 0;
+  }
+  .core-tech__image {
+    width: calc(100% - 40px);
+  }
+  .footer__nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding-bottom: 20px;
+  }
+  .footer__nav-item > a {
+    padding-bottom: 0;
+  }
+  .footer__nav-item:not(:first-child) > a::before {
+    content: "";
+  }
+  .footer__contents-aside > p {
+    text-align: center;
+    font-size: 3rem;
+  }
+  .footer__contents {
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 20px;
+    text-align: center;
+  }
+  .footer__contact {
+    justify-content: center;
+  }
+  .footer__info {
+    align-items: center;
+  }
+  .footer__copyright {
+    padding-top: 8px;
+    padding-bottom: 16px;
+  }
+}
+@media (max-width: 567px) {
+  .banner__title {
+    font-size: 3.4rem;
+  }
+  .pipeline__cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .whatwedo__cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .news-notice__link .link-icon {
+    display: none;
   }
 }

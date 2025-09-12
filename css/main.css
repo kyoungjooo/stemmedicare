@@ -93,6 +93,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
 }
 .header__logo {
   font-weight: 700;
@@ -100,12 +102,12 @@ body {
   background-image: url("../assets/images/logo.svg");
   width: 16.2rem;
   height: 4.2rem;
+  flex-shrink: 0;
 }
 .header__nav {
   display: flex;
   gap: 2vw;
   font-size: 1.5rem;
-  padding: 2.3em 0 2.1em 0;
   color: var(--white);
 }
 .header__link {
@@ -233,35 +235,38 @@ body {
   height: 100%;
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
-  padding: 14px;
+  padding-inline: 14px;
 }
 .pipeline-card__summary {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 .pipeline-card__icon {
-  width: inherit;
+  width: 100%;
+  height: 8rem;
+  background-size: contain;
+  margin-top: 4.8rem;
 }
 .pipeline__card:first-child .pipeline-card__icon {
   background-image: url("../assets/images/main/pipeline_01.png");
-  height: 6.5rem;
+  width: 80%;
 }
 .pipeline__card:nth-child(2) .pipeline-card__icon {
   background-image: url("../assets/images/main/pipeline_02.png");
-  height: 8rem;
 }
 .pipeline__card:nth-child(3) .pipeline-card__icon {
   background-image: url("../assets/images/main/pipeline_03.png");
-  height: 8.6rem;
 }
 .pipeline__card:nth-child(4) .pipeline-card__icon {
   background-image: url("../assets/images/main/pipeline_04.png");
-  height: 6.8rem;
 }
 .pipeline__card:nth-child(5) .pipeline-card__icon {
   background-image: url("../assets/images/main/pipeline_05.png");
-  height: 8.2rem;
 }
 
 .pipeline-card__title {
@@ -286,11 +291,9 @@ body {
   width: 18px;
   height: 18px;
   margin: 0 auto;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  position: relative;
   z-index: 0;
+  bottom: 14px;
 }
 .pipeline-card[open],
 .pipeline-card:hover {
@@ -299,11 +302,11 @@ body {
 }
 .pipeline-card[open] .pipeline-card__toggle,
 .pipeline-card:hover .pipeline-card__toggle {
-  display: none;
+  visibility: hidden;
 }
 
 .pipeline-card__summary::-webkit-details-marker {
-  display: none;
+  visibility: hidden;
 }
 
 .pipeline-card[open] .pipeline-card__descript,
@@ -371,7 +374,7 @@ body {
 /* *********** core-tech *********** */
 .core-tech {
   background-image: url("../assets/images/main/core_bg.png");
-  padding: 9em 0 10em 0;
+  padding: 0 0 10em 0;
   background-size: cover;
 }
 .core-tech__inner {
@@ -391,7 +394,7 @@ body {
 }
 .core-tech__image {
   aspect-ratio: 16 / 10;
-  min-height: 56.4rem;
+  width: 75%;
   background-size: cover;
   flex-shrink: 0;
   opacity: 50%;
@@ -538,6 +541,10 @@ body {
 }
 .news-notice__item a {
   color: #626262;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 16px;
 }
 .news-notice__item time {
   font-size: 1.2rem;
@@ -659,7 +666,7 @@ body {
 .footer__logo {
   color: var(--white);
   background-image: url("../assets/images/logo_footer.svg");
-  width: 11vw;
+  width: clamp(18rem, 11vw, 21.4rem);
   height: 38px;
   flex-shrink: 0;
 }

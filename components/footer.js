@@ -14,7 +14,7 @@ const template = `
         <div class="footer__contents container--xl container">
           <div class="footer__contents-aside">
             <p>
-              REALIZING A HEALTHY LIFE, THE ETERNAL ASPIRATION OF
+              REALIZING A HEALTHY LIFE,<br> THE ETERNAL ASPIRATION OF
               HUMANKIND.
             </p>
             <div class="footer__info">
