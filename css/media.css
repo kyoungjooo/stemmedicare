@@ -23,6 +23,22 @@
   .core-overview .table__content {
     grid-template-columns: repeat(3, 1fr);
   }
+  .item__group {
+    flex-direction: column;
+    background-color: transparent;
+    gap: 6px;
+    border-radius: unset;
+  }
+  .item__group .item__text {
+    border-radius: 30px;
+  }
+  .item__operator-wrap {
+    transform: unset;
+    transform: scale(0.6);
+  }
+  .tri-right {
+    display: none;
+  }
 }
 @media screen and (max-width: 999px) {
   html {
@@ -80,6 +96,9 @@
   }
   .core-tech__image {
     width: calc(100% - 40px);
+  }
+  .core-overview .table__content {
+    grid-template-columns: repeat(2, 1fr);
   }
   .footer__nav {
     flex-direction: column;
