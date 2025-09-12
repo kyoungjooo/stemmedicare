@@ -1,6 +1,6 @@
 const template = `
  <footer class="footer">
-      <div class="footer__inner container--xl">
+      <div class="footer__inner">
         <ul class="footer__nav">
           <li class="footer__nav-item">
             <a href="/">Who We are</a>
@@ -11,14 +11,14 @@ const template = `
           <li class="footer__nav-item"><a href="/">Achievements</a></li>
           <li class="footer__nav-item"><a href="/">Contact Us</a></li>
         </ul>
-        <div class="footer__contents">
+        <div class="footer__contents container--xl container">
           <div class="footer__contents-aside">
             <p>
-              REALIZING A HEALTHY LIFE,<br />THE ETERNAL ASPIRATION OF
+              REALIZING A HEALTHY LIFE, THE ETERNAL ASPIRATION OF
               HUMANKIND.
             </p>
             <div class="footer__info">
-              <div class="footer__name">STEMMedicare</div>
+              <div class="footer__name font-poppins">STEMMedicare</div>
 
               <div class="footer__info-brand">
                 <address class="footer__address">

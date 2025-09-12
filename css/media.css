@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+/* 너비가 1280px 이하일 때 */
+@media screen and (max-width: 1280px) {
+  .news-notice__link {
+    aspect-ratio: auto;
+  }
+  .news-notice__banners {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .news-notice__link:first-child .link-icon {
+    width: 6.5rem;
+  }
+  .news-notice__link:nth-child(2) .link-icon {
+    width: 8.5rem;
+  }
+}

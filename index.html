@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>stemmedicare</title>
     <link rel="stylesheet" href="./css/layout.css" />
     <script type="module" src="./components/header.js"></script>
     <script type="module" src="./components/footer.js"></script>
   </head>
   <body>
     <site-header></site-header>
+
     <!-- banner -->
     <section class="banner" aria-label="메인 배너">
       <div class="banner__inner">
         <ul class="banner__list" id="banner-list">
           <!-- 배너 이미지, 컨텐츠 -->
           <li class="banner__item">
-            <div class="banner__content container--md">
+            <div class="banner__content container--md container">
               <h2 class="banner__title">
                 Development of Stem Cell<br />
                 Therapy That is Safe for<br />Immune Rejection
@@ -37,7 +38,7 @@
 
         <!-- banner__controls -->
         <div
-          class="banner__controls container--md"
+          class="banner__controls container--md container font-poppins"
           role="group"
           aria-label="메인 배너 슬라이드 컨트롤"
         >
@@ -64,11 +65,11 @@
     </section>
 
     <!-- r&d-pipeline -->
-    <section class="pipeline" id="r&d-pipeline">
+    <section class="pipeline font-poppins" id="r&d-pipeline">
       <h2 class="pipeline__title main-title" id="r&d-pipeline">
         R&amp;D PIPELINE
       </h2>
-      <div class="pipeline__inner container--md">
+      <div class="pipeline__inner container--md container">
         <ul class="pipeline__cards" role="list">
           <!-- pipeline__card -->
           <li class="pipeline__card">
@@ -184,7 +185,7 @@
     <!-- whatwedo -->
     <section class="whatwedo">
       <h2 class="whatwedo__title main-title" id="what-we-do">WHAT WE DO</h2>
-      <div class="whatwedo__inner container--md">
+      <div class="whatwedo__inner container--md container">
         <ul class="whatwedo__cards">
           <!-- whatwedo__card -->
           <li class="whatwedo__card">
@@ -271,12 +272,12 @@
           ></li>
           <li class="core-tech__image background" aria-hidden="true"></li>
         </ul>
-        <div class="core-tech__content container--md">
+        <div class="core-tech__content container--md container">
           <div class="core-tech__lists">
             <ul class="core-tech__list">
               <li class="core-tech__item">
                 <a class="core-tech__link" href="/">
-                  <h3 class="core-tech__item-title">
+                  <h3 class="core-tech__item-title font-poppins">
                     Development of<br />Immune-tolerized<br />Cells &amp; EVs
                   </h3>
                   <p class="core-tech__desc">
@@ -312,7 +313,7 @@
     </section>
 
     <section class="news-notice">
-      <div class="news-notice__inner container--md">
+      <div class="news-notice__inner container--md container">
         <div class="news-notice__lists">
           <div class="news-notice__header">
             <h2 class="news-notice__title main-title" id="news-notice">
@@ -341,7 +342,7 @@
         </div>
         <div class="news-notice__banners">
           <div class="news-notice__link news-notice__company">
-            <span class="link-title">COMPANY</span>
+            <span class="link-title font-poppins">COMPANY</span>
             <p class="link-text">
               스템메디케어는 많은 연구 및 노하우로<br />면역시스템에 관한
               솔루션을 개발합니다.
@@ -349,10 +350,9 @@
             <span class="link-icon background" aria-label="hidden"></span>
           </div>
           <div class="news-notice__link news-notice__inquiry">
-            <span class="link-title">INQUIRY</span>
+            <span class="link-title font-poppins">INQUIRY</span>
             <p class="link-text">
-              궁금하신 사항은<br />
-              온라인 문의를 이용해주세요.
+              궁금하신 사항은<br />온라인 문의를 이용해주세요.
             </p>
             <span class="link-icon background" aria-label="hidden"></span>
           </div>

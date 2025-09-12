@@ -1,6 +1,6 @@
 const template = `
 <header class="header header--sticky">
-  <div class="header__inner container--xl">
+  <div class="header__inner container--xl container">
     <a href="/" class="header__logo background"><h1 class="hidden">logo</h1></a>
     <nav class="header__nav" aria-label="Main">
       <a href="/about.html"   class="header__link">Who We are</a>
