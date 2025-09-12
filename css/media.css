@@ -20,6 +20,9 @@
   .footer__contents-aside {
     grid-template-columns: auto;
   }
+  .core-overview .table__content {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @media screen and (max-width: 999px) {
   html {

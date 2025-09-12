@@ -24,9 +24,9 @@ class PageBanner extends HTMLElement {
 
   render() {
     const title = this.getAttribute("title") || "";
-    const rawDesc = this.getAttribute("desc") || "";
-    const descHtml = rawDesc.replace(/\\n|\n/g, "<br>");
-    const sectionClass = this.getAttribute("section-class");
+    const desc = this.getAttribute("desc") || "";
+    const descHtml = desc.replace(/\\n|\n/g, "<br>");
+    const sectionClass = this.getAttribute("section-class") || "";
     this.innerHTML = template({ title, descHtml, sectionClass });
   }
 }
