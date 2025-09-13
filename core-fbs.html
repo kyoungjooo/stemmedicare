@@ -37,101 +37,188 @@
             </p>
           </div>
         </div>
-        <article class="current-tech">
+        <section class="current-tech">
           <div class="current-tech__inner">
-            <div class="">
+            <div class="current-tech__content">
               <h2 class="current-tech__title font-roboto-co">
                 Current Technology
               </h2>
 
               <!-- current-tech__process -->
               <div class="current-tech__process">
-                <ul class="current-tech__list">
-                  <!--  current-tech__step -->
-                  <li class="current-tech__step step-01">
-                    <div class="current-tech__item">
-                      <span
-                        class="current-tech__step-icon background"
-                        style="
-                          background-image: url('../assets/images/core/tech_01.png');
-                        "
-                        aria-hidden="true"
-                      ></span>
-                      <p class="current-tech__step-desc">Cell Expansion</p>
-                    </div>
-                  </li>
-                  <li class="current-tech__step step-02">
-                    <div class="current-tech__item">
-                      <span
-                        class="current-tech__step-icon background"
-                        style="
-                          background-image: url('../assets/images/core/tech_02.png');
-                          height: 9.4rem;
-                        "
-                        aria-hidden="true"
-                      ></span>
-                      <p class="current-tech__step-desc">
-                        Dispensing cells into cryopreservation vial
-                      </p>
-                    </div>
-                  </li>
-                  <li class="current-tech__step step-03">
-                    <div class="current-tech__item">
-                      <span
-                        class="current-tech__step-icon background"
-                        style="
-                          background-image: url('../assets/images/core/tech_03.png');
-                        "
-                        aria-hidden="true"
-                      ></span>
-                      <p class="current-tech__step-desc">
-                        Adding cryopreservatives containing<br />
-                        <span class="font-b">FBS & DMSO</span>
-                      </p>
-                    </div>
-                  </li>
-                  <li class="current-tech__step step-04">
-                    <div class="current-tech__item">
-                      <span
-                        class="current-tech__step-icon background"
-                        style="
-                          background-image: url('../assets/images/core/tech_04.png');
-                          height: 8.4rem;
-                        "
-                        aria-hidden="true"
-                      ></span>
-                      <p class="current-tech__step-desc">
-                        Cell freezing in deep freezer (-80℃)
-                      </p>
-                    </div>
-                  </li>
-                  <li class="current-tech__step step-05">
-                    <div class="current-tech__item">
-                      <span
-                        class="current-tech__step-icon background"
-                        style="
-                          background-image: url('../assets/images/core/tech_05.png');
-                          height: 8.4rem;
-                        "
-                        aria-hidden="true"
-                      ></span>
-                      <p class="current-tech__step-desc">
-                        Cell Banking in LN2 tank (-196℃)
-                      </p>
-                    </div>
-                  </li>
-                </ul>
+                <div class="current-tech__container">
+                  <ul class="current-tech__list">
+                    <!--  current-tech__step -->
+                    <li class="current-tech__step step-01">
+                      <div class="current-tech__item">
+                        <span
+                          class="current-tech__step-icon background"
+                          style="
+                            background-image: url('../assets/images/core/tech_01.png');
+                          "
+                          aria-hidden="true"
+                        ></span>
+                        <p class="current-tech__step-desc">Cell Expansion</p>
+                      </div>
+                    </li>
+                    <li class="current-tech__step step-02">
+                      <div class="current-tech__item">
+                        <span
+                          class="current-tech__step-icon background"
+                          style="
+                            background-image: url('../assets/images/core/tech_02.png');
+                            height: 9.4rem;
+                          "
+                          aria-hidden="true"
+                        ></span>
+                        <p class="current-tech__step-desc">
+                          Dispensing cells into cryopreservation vial
+                        </p>
+                      </div>
+                    </li>
+                    <li class="current-tech__step step-03">
+                      <div class="current-tech__item">
+                        <span
+                          class="current-tech__step-icon background"
+                          style="
+                            background-image: url('../assets/images/core/tech_03.png');
+                          "
+                          aria-hidden="true"
+                        ></span>
+                        <p class="current-tech__step-desc">
+                          Adding cryopreservatives containing<br />
+                          <span class="font-b">FBS & DMSO</span>
+                        </p>
+                      </div>
+                    </li>
+                    <li class="current-tech__step step-04">
+                      <div class="current-tech__item">
+                        <span
+                          class="current-tech__step-icon background"
+                          style="
+                            background-image: url('../assets/images/core/tech_04.png');
+                            height: 8.4rem;
+                          "
+                          aria-hidden="true"
+                        ></span>
+                        <p class="current-tech__step-desc">
+                          Cell freezing in deep freezer (-80℃)
+                        </p>
+                      </div>
+                    </li>
+                    <li class="current-tech__step step-05">
+                      <div class="current-tech__item">
+                        <span
+                          class="current-tech__step-icon background"
+                          style="
+                            background-image: url('../assets/images/core/tech_05.png');
+                            height: 8.4rem;
+                          "
+                          aria-hidden="true"
+                        ></span>
+                        <p class="current-tech__step-desc">
+                          Cell Banking in LN2 tank (-196℃)
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div class="problem">
+              <span class="problem__title font-b">Problem</span>
               <div class="problem__inner">
                 <ul class="problem__list">
-                  <li class="problem__item"></li>
+                  <li class="problem__item">
+                    Huge initial equipment costs
+                    <span class="item__operator" aria-hidden="true"></span>
+                  </li>
+                  <li class="problem__item">
+                    Continuous LN2 maintenance costs
+                    <span class="item__operator" aria-hidden="true"></span>
+                  </li>
+                  <li class="problem__item">
+                    FBS-derived immunogenicity
+                    <span class="item__operator" aria-hidden="true"></span>
+                  </li>
+                  <li class="problem__item">DMSO-induced cytotoxicity</li>
                 </ul>
               </div>
             </div>
           </div>
-        </article>
+        </section>
+        <section class="biohazards">
+          <div class="biohazards__inner">
+            <div class="biohazards__content">
+              <article class="biohazards__card">
+                <h4 class="biohazards__title">FBS (Fetal Bovine Serum)</h4>
+                <ul class="biohazards__list">
+                  <li class="biohazards__item">
+                    <span
+                      >Risk of contamination with bovine pathogens, such as
+                      bovine viruses, prions, mycoplasma, or other infectious
+                      agents causing BSE (mad cow disease)</span
+                    >
+                  </li>
+                  <li class="biohazards__item">
+                    <span>
+                      Internalized animal antigens in cryopreserved cells may
+                      cause harmful immune reactions in patients for clinical
+                      application</span
+                    >
+                  </li>
+                  <li class="biohazards__item">
+                    <span>
+                      Entirely dependent on imports and no domestic alternative
+                      technology</span
+                    >
+                  </li>
+                </ul>
+
+                <p class="biohazards__impact font-b">
+                  Immunogenicity / Tumorigenicity<br />
+                  Infection with bovine-derived diseases
+                </p>
+              </article>
+              <article class="biohazards__card">
+                <h4 class="biohazards__title">DMSO(Dimethyl Sulfoxide)</h4>
+                <ul class="biohazards__list">
+                  <li class="biohazards__item">
+                    <span
+                      >Induces DNA damage, transformation, and apoptosis of
+                      cryopreserved cells by cytotoxicity</span
+                    >
+                  </li>
+                  <li class="biohazards__item">
+                    <span
+                      >DMSO Cryopreserved Stem cell transplantation causes side
+                      effects (allergies, gastrointestinal disorders,
+                      neurological disorders, etc.)</span
+                    >
+                  </li>
+                  <li class="biohazards__item">
+                    <span
+                      >Adverse reactions occurred in 67% of patients injected
+                      with DMSO cryopreserved hematopoietic stem cells
+                      (HSCs)</span
+                    >
+                  </li>
+                  <li class="biohazards__item">
+                    <span
+                      >Entirely dependent on imports and no domestic alternative
+                      technology</span
+                    >
+                  </li>
+                </ul>
+
+                <p class="biohazards__impact font-b">
+                  Immunogenicity / Tumorigenicity<br />
+                  Infection with bovine-derived diseases
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
       </section>
     </div>
   </body>
