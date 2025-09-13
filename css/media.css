@@ -23,13 +23,13 @@
   .core-overview .table__content {
     grid-template-columns: repeat(3, 1fr);
   }
-  .item__group {
+  .core-overview .item__group {
     flex-direction: column;
     background-color: transparent;
     gap: 6px;
     border-radius: unset;
   }
-  .item__group .item__text {
+  .core-overview .item__group .item__text {
     border-radius: 30px;
   }
   .item__operator-wrap {
@@ -145,5 +145,8 @@
   }
   .news-notice__link .link-icon {
     display: none;
+  }
+  .core-overview .item__text {
+    font-size: 2rem;
   }
 }

@@ -68,6 +68,11 @@ body {
 .font-roboto-co {
   font-family: "Roboto Condensed", sans-serif;
 }
+
+.font-b {
+  font-weight: 600;
+}
+
 /* 사이즈 변형 */
 .container {
   margin: 0 auto;
@@ -732,15 +737,20 @@ body {
   font-size: 2.1rem;
   color: var(--gray-06);
 }
+.page-datail__sub-title {
+  font-size: 6rem;
+  color: var(--red-01);
+  font-weight: 400;
+}
 
-/* core-overview */
+/* ********** core-overview ********** */
 .core-overview .item {
   display: flex;
   align-items: center;
   color: var(--gray-04);
   margin-top: 5.8em;
 }
-.item__group {
+.core-overview .item__group {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -750,7 +760,7 @@ body {
   border-radius: 30px 0 0 30px;
   overflow: hidden;
 }
-.item__text {
+.core-overview .item__text {
   color: var(--white);
   background-color: var(--gray-04);
   width: 100%;
@@ -789,7 +799,7 @@ body {
 .item__operator::after {
   content: "";
   position: absolute;
-  background: currentColor;
+  background: var(--red-01);
 }
 .item__operator::before {
   left: 0;
@@ -824,28 +834,28 @@ body {
   font-size: 1.5rem;
 }
 
-.table__item .table-item__header {
+.core-overview .table__item .table-item__header {
   position: relative;
 }
-.table__item:first-child .table-item__header {
+.core-overview .table__item:first-child .table-item__header {
   color: #919191;
 }
-.table__item:nth-child(2) .table-item__header {
+.core-overview .table__item:nth-child(2) .table-item__header {
   color: #6a6a6a;
 }
-.table__item:nth-child(3) .table-item__header {
+.core-overview .table__item:nth-child(3) .table-item__header {
   color: var(--orange-01);
 }
-.table__item:nth-child(4) .table-item__header {
+.core-overview .table__item:nth-child(4) .table-item__header {
   color: var(--orange-02);
 }
-.table__item:nth-child(5) .table-item__header {
+.core-overview .table__item:nth-child(5) .table-item__header {
   color: var(--orange-03);
 }
-.table__item:nth-child(6) .table-item__header {
+.core-overview .table__item:nth-child(6) .table-item__header {
   color: var(--red-01);
 }
-.table__item:nth-child(6) .table-item__header::before {
+.core-overview .table__item:nth-child(6) .table-item__header::before {
   content: none;
 }
 .core-overview .table-item__header:before {
@@ -911,6 +921,7 @@ body {
 }
 .core-overview .table-item__desc {
   margin-inline: 6px;
+  padding-block: 1.5em 2em;
 }
 .core-overview .table-item__image {
   background-size: cover;
@@ -982,4 +993,75 @@ body {
   justify-content: center;
   font-weight: 500;
   color: var(--white);
+}
+
+/* ********** core-fbs ********** */
+.current-tech__list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto auto;
+  background-color: #f0f0ef;
+  padding-block: 1.2em;
+  border-radius: 9999px;
+  place-items: center;
+  place-content: center;
+  outline: 1px solid var(--gray-02);
+  outline-offset: 1.8em;
+}
+.current-tech__step {
+  background-color: var(--white);
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 2;
+  padding: 2em;
+  width: 20.4rem;
+  box-sizing: border-box;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 1px solid var(--gray-04);
+  position: relative;
+}
+.current-tech__step:not(:last-child)::before {
+  content: "";
+  display: block;
+  height: 8px;
+  width: 70%;
+  background-color: var(--gray-04);
+  right: -30%;
+  top: 30%;
+  position: absolute;
+  z-index: 1;
+}
+.current-tech__step:not(:last-child)::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 16px solid var(--gray-04);
+  background-color: transparent;
+  position: absolute;
+  right: -35%;
+  top: 30%;
+  z-index: 1;
+  transform: translateY(-35%);
+}
+.current-tech__item {
+  display: contents;
+}
+.current-tech__step-icon {
+  grid-row: 1;
+  width: auto;
+  height: 6.8rem;
+}
+.current-tech__step-desc {
+  font-size: 1.6rem;
+  text-align: center;
+  grid-row: 2;
+}
+.current-tech__title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
 }
