@@ -742,13 +742,13 @@ body {
   line-height: 1;
 }
 .page-datail__desc {
-  font-size: 2.1rem;
+  font-size: 1.8rem;
   color: var(--gray-06);
 }
 .page-datail__sub-title {
   font-size: 6rem;
   color: var(--red-01);
-  font-weight: 400;
+  font-weight: 500;
   font-family: "Teko", sans-serif;
   margin-top: 1em;
   margin-bottom: 0.5em;
@@ -1014,8 +1014,7 @@ body {
 
 /* ********** core-fbs ********** */
 .current-tech {
-  padding-top: 30px;
-  padding-bottom: 24em;
+  padding-bottom: 15em;
 }
 .current-tech__inner {
   display: flex;
@@ -1133,7 +1132,7 @@ body {
   background-color: var(--white);
   top: -5px;
   left: 50%;
-  transform: translate(-50%, -100%);
+  transform: translate(-50%, -50%);
 }
 
 .problem__list {
@@ -1175,6 +1174,9 @@ body {
 }
 
 /* ********** biohazards ********** */
+.biohazards {
+  padding-bottom: 15em;
+}
 .biohazards__content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1206,7 +1208,10 @@ body {
   font-size: 1.6rem;
   display: flex;
 }
-.biohazards__item::before {
+.biohazards__item.bullet::before {
+  top: 8px;
+}
+.bullet::before {
   content: "";
   width: 6px;
   height: 6px;
@@ -1215,8 +1220,7 @@ body {
   border-radius: 6px;
   flex-shrink: 0;
   position: relative;
-  top: 8px;
-  margin-right: 12px;
+  margin-right: 8px;
 }
 .biohazards__impact {
   font-size: 2.4rem;
@@ -1229,4 +1233,141 @@ body {
   bottom: 0;
   width: 100%;
   transform: translateY(50%);
+}
+
+/* ********** mbtc ********** */
+.mbtc {
+  padding-bottom: 15em;
+}
+.mbtc-item__title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  background-color: var(--orange-03);
+  color: var(--white);
+  padding-block: 0.8em;
+  border-radius: 1rem;
+  text-align: center;
+  position: relative;
+}
+.mbtc-item__title::after {
+  content: "";
+  width: clamp(1.3rem, 1.4vw, 2.7rem);
+  height: 1px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  display: inline-block;
+  background-color: var(--gray-04);
+  transform: translateX(100%);
+}
+.mbtc__inner {
+  padding-top: 4.2em;
+}
+.mbtc__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.3em;
+}
+.mbtc__item {
+  display: grid;
+  grid-template-columns: 14vw 1fr;
+  gap: clamp(1.3rem, 1.4vw, 2.7rem);
+  align-items: center;
+}
+.mbtc-item__bullets {
+  border: 1px solid var(--orange-02);
+  border-radius: 1rem;
+  padding: 1.8em 2.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  height: 100%;
+  box-sizing: border-box;
+}
+.mbtc-item__bullet {
+  display: flex;
+}
+.mbtc-item__bullet-text {
+  font-size: 1.6rem;
+}
+.mbtc-item__bullet::before {
+  top: 8px;
+}
+
+/* ********** application ********** */
+.app__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.circle__center {
+  background-image: url("../assets/images/core/cryoguard.png");
+  width: clamp(12.2rem, 12.7vw, 24.4rem);
+  height: 100%;
+  display: block;
+  background-size: contain;
+  position: relative;
+  top: -4px;
+}
+.circle__deco {
+  background-image: url("../assets/images/core/circle.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: clamp(30rem, 31.3vw, 60rem);
+  position: absolute;
+  aspect-ratio: 1 / 1;
+  background-size: contain;
+}
+.app__circle {
+  width: clamp(14.2rem, 14.8vw, 28.4rem);
+  aspect-ratio: 1 / 1;
+  border: 1em solid #0088fe;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app__list {
+  position: absolute;
+  background-color: #0057c8;
+  z-index: 5;
+  aspect-ratio: 1 / 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app__item {
+  display: block;
+  position: absolute;
+  width: clamp(9.1rem, 9.5vw, 18.2rem);
+  aspect-ratio: 1 / 1;
+  background-color: var(--orange-02);
+  z-index: 1;
+  border-radius: 999px;
+}
+.app__item:first-child {
+  top: 0%;
+  transform: translateY(-100%);
+}
+.app__item:nth-child(2) {
+  right: 0;
+  transform: translate(100%, -75%);
+}
+.app__item:nth-child(3) {
+  right: 0;
+  transform: translate(100%, 75%);
+}
+.app__item:nth-child(4) {
+  bottom: 0;
+  transform: translateY(100%);
+}
+.app__item:nth-child(5) {
+  left: 0;
+  transform: translate(-100%, 75%);
+}
+.app__item:nth-child(6) {
+  left: 0;
+  transform: translate(-100%, -75%);
 }

@@ -2,6 +2,9 @@
 
 /* 너비가 1280px 이하일 때 */
 @media screen and (max-width: 1280px) {
+  html {
+    font-size: 9px;
+  }
   .container--md {
     padding-inline: 100px;
   }
@@ -42,7 +45,7 @@
 }
 @media screen and (max-width: 999px) {
   html {
-    font-size: 9px;
+    font-size: 8px;
   }
   .container--md {
     padding-inline: 50px;
