@@ -170,6 +170,23 @@
     padding-top: 8px;
     padding-bottom: 16px;
   }
+  .platform-tech__title {
+    width: 100%;
+  }
+  .platform-tech__list {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+  }
+  .platform-tech .line {
+    display: none;
+  }
+  .platform-tech__title::after {
+    content: none;
+  }
+  .platform-tech__item:first-child .platform-tech__badge::after,
+  .platform-tech__item:last-child .platform-tech__badge::after {
+    content: "";
+  }
 }
 @media (max-width: 567px) {
   html {
@@ -198,5 +215,12 @@
   }
   .current-tech__list {
     border-radius: 0;
+  }
+  .current-tech__step:not(:last-child)::before {
+    width: 50%;
+    right: -30%;
+  }
+  .current-tech__step:not(:last-child)::after {
+    right: -35%;
   }
 }
