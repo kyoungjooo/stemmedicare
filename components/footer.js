@@ -6,11 +6,11 @@
           <li class="footer__nav-item">
             <a href="/">Who We are</a>
           </li>
-          <li class="footer__nav-item"><a href="/">What We Do</a></li>
-          <li class="footer__nav-item"><a href="/">Core Technology</a></li>
-          <li class="footer__nav-item"><a href="/">Pipelines</a></li>
-          <li class="footer__nav-item"><a href="/">Achievements</a></li>
-          <li class="footer__nav-item"><a href="/">Contact Us</a></li>
+          <li class="footer__nav-item"><a href="#" >What We Do</a></li>
+          <li class="footer__nav-item"><a href="#" >Core Technology</a></li>
+          <li class="footer__nav-item"><a href="#" >Pipelines</a></li>
+          <li class="footer__nav-item"><a href="#" >Achievements</a></li>
+          <li class="footer__nav-item"><a href="#" >Contact Us</a></li>
         </ul>
         <div class="footer__contents container--xl container">
           <div class="footer__contents-aside">
