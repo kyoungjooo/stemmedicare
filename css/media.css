@@ -99,9 +99,7 @@
   html {
     font-size: 8px;
   }
-  .page-nav__inner {
-    justify-content: unset;
-  }
+
   .page-container {
     padding-block: 7.2em 9.4em;
   }
@@ -194,6 +192,9 @@
   .platform-tech__item:last-child .platform-tech__badge::after {
     content: "";
   }
+  .platform-tech__graph {
+    justify-content: unset;
+  }
 }
 @media (max-width: 567px) {
   html {
@@ -202,7 +203,9 @@
   .banner__title {
     font-size: 3.4rem;
   }
-
+  .page-nav__inner {
+    justify-content: unset;
+  }
   .pipeline__cards {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -218,6 +221,7 @@
   .core-tech__desc {
     width: 100%;
   }
+
   .current-tech__process {
     border-radius: 1.4em;
   }
