@@ -12,7 +12,6 @@
   <body>
     <div class="core-mass">
       <site-header></site-header>
-
       <!-- banner -->
       <page-banner
         section-class="page-banner--core"
@@ -21,6 +20,25 @@
       >
       </page-banner>
 
+      <nav class="page-nav" aria-label="navigation">
+        <div class="page-nav__inner scroll container container--md">
+          <ul class="page-nav__list font-teko">
+            <li class="page-nav__item">
+              <a class="page-nav__link" href="/core-overview.html">OVERVIEW</a>
+            </li>
+            <li class="page-nav__item">
+              <a class="page-nav__link" href="/core-fbs.html">
+                FBS &amp; DMSO-FREE CRYOPRESERVATION
+              </a>
+            </li>
+            <li class="page-nav__item active">
+              <a class="page-nav__link" href="/core-mass.html"
+                >MASS PRODUCTION OF EVS</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
       <section class="container--md container page-container font-roboto-co">
         <div class="font-teko">
           <div class="page-datail__inner">
@@ -43,7 +61,7 @@
             </p>
           </div>
         </div>
-        <section class="platform-tech page-section">
+        <section class="platform-tech">
           <div class="platform-tech__inner">
             <h3 class="platform-tech__title">
               Platform Technology for mass production of<br />
@@ -136,7 +154,25 @@
             </div>
           </div>
         </section>
+        <figure class="platform-tech__graph">
+          <img
+            src="./assets/images/core/graph.png"
+            srcset="
+              ./assets/images/core/graph.png    1x,
+              ./assets/images/core/graph@2x.png 2x
+            "
+            alt="막대그래프: HLA-G(+) MBTC 그룹 HLA-G(−) 대조군 비교 그래프"
+            aria-describedby="ev-chart-desc"
+            loading="lazy"
+          />
+          <figcaption class="hidden" id="ev-chart-desc">
+            비교쌍별 대략값: hAM 30 vs 225, hBM 25 vs 190, hUC 15–20 vs 185, hAF
+            50–55 vs 210, hAD 25 vs 180. 모든 쌍에서 HLA-G(+) MBTC-MSC-EVs가
+            HLA-G(−)보다 높게 나타남
+          </figcaption>
+        </figure>
       </section>
+      <site-footer></site-footer>
     </div>
   </body>
 </html>

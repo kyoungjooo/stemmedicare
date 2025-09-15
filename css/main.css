@@ -56,7 +56,7 @@ body {
   z-index: -1;
 }
 .page-section {
-  padding-bottom: 1.5em;
+  padding-bottom: 15em;
 }
 
 .font-teko {
@@ -74,6 +74,12 @@ body {
 
 .font-b {
   font-weight: 600;
+}
+.scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-gutter: stable both-edges;
 }
 
 /* 사이즈 변형 */
@@ -137,6 +143,38 @@ body {
   text-decoration: underline;
 }
 
+/* page-nav */
+.page-nav {
+  border-bottom: 1px solid var(--gray-02);
+}
+.page-nav__list {
+  display: flex;
+  justify-content: center;
+  justify-content: flex-start;
+}
+.page-nav__item {
+  font-size: 2rem;
+  padding: 16px 54px;
+  padding: 0.8em 2.7em;
+  position: relative;
+  flex-shrink: 0;
+}
+.page-nav__link {
+  color: var(--gray-03);
+}
+.page-nav__item.active .page-nav__link {
+  color: var(--red-01);
+}
+.page-nav__item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  width: 0.5px;
+  height: 1.5rem;
+  background-color: var(--gray-04);
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
 /* main */
 /* ********** banner ********** */
 
@@ -1513,4 +1551,15 @@ body {
 .platform-tech__icon {
   height: 6.4rem;
   background-size: contain;
+}
+.platform-tech__graph {
+  overflow-x: scroll;
+  object-fit: contain;
+  border: 1px solid var(--gray-02);
+  border-radius: 1em;
+  padding: 5em;
+}
+.platform-tech__graph img {
+  min-width: 700px;
+  width: 68.8vw;
 }
