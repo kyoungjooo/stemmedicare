@@ -162,7 +162,8 @@ body {
 .page-nav__link {
   color: var(--gray-03);
 }
-.page-nav__item.active .page-nav__link {
+.page-nav__item.active .page-nav__link,
+.page-nav__link[aria-current="page"] {
   color: var(--red-01);
 }
 .page-nav__item:not(:last-child)::after {
@@ -1103,7 +1104,6 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto auto;
-  overflow-x: scroll;
   overflow-y: hidden;
   padding: 1.5em;
   border-radius: 9999px;
@@ -1340,6 +1340,7 @@ body {
   justify-content: center;
   width: 100%;
   position: relative;
+  padding-bottom: 10rem;
 }
 .app__circle {
   object-fit: contain;
@@ -1353,7 +1354,9 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
+  top: 0;
 }
+
 .sub-title {
   font-size: 3.5rem;
   position: relative;
@@ -1370,32 +1373,33 @@ body {
   flex-direction: column;
   gap: 0.25em;
   transform: translateY(1.2em);
+  background-color: var(--white);
 }
 .app__item:first-child .app-item__bullets {
   top: 0;
   left: 0;
 }
 .app__item:nth-child(2) .app-item__bullets {
-  top: 30%;
+  top: 26%;
   right: 0;
 }
-.app__item:nth-child(3) .app-item__bullets {
+.app__item:nth-child(3) .app-item__bullets,
+.app__item:nth-child(6) .app-item__bullets {
   right: 0;
-  top: 66%;
+  top: 58%;
 }
 .app__item:nth-child(4) .app-item__bullets {
   left: 50%;
-  bottom: 0;
+  bottom: 8%;
   max-width: unset;
-  transform: translateY(calc(100% + 1.2em));
 }
 .app__item:nth-child(5) .app-item__bullets {
   left: 0;
-  top: 30%;
+  top: 26%;
 }
 .app__item:nth-child(6) .app-item__bullets {
   left: 0;
-  top: 66%;
+  top: 58%;
 }
 .app-item__bullets .bullet {
   display: flex;
@@ -1553,7 +1557,6 @@ body {
   background-size: contain;
 }
 .platform-tech__graph {
-  overflow-x: scroll;
   object-fit: contain;
   border: 1px solid var(--gray-02);
   border-radius: 1em;

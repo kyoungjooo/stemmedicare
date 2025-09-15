@@ -37,7 +37,7 @@
             </p>
           </div>
         </div>
-        <section class="current-tech page-section">
+        <section class="current-tech page-section" tabindex="-1">
           <div class="current-tech__inner">
             <div class="current-tech__content">
               <h2 class="current-tech__title font-roboto-co">
@@ -47,7 +47,7 @@
               <!-- current-tech__process -->
               <div class="current-tech__process">
                 <div class="current-tech__container">
-                  <ul class="current-tech__list">
+                  <ul class="current-tech__list scroll">
                     <!--  current-tech__step -->
                     <li class="current-tech__step step-01">
                       <div class="current-tech__item">
@@ -325,15 +325,20 @@
             </ul>
           </div>
         </section>
-        <section class="app">
+        <section class="app" tabindex="-1">
           <h4 class="app__title sub-title">Application</h4>
-          <div class="app__inner">
+          <div class="app__inner scroll">
             <div class="app__content">
-              <div class="app__circle">
+              <div class="app__circle" aria-label="hidden">
                 <img
                   class="circle-image"
-                  src="./assets/images/core/application.png"
-                  alt=""
+                  src="./assets/images/core/app.png"
+                  srcset="
+                    ./assets/images/core/app.png x1,
+                    ./assets/images/core/app@2x.png x2,
+                      ./assets/images/core/app@3x.png x3
+                  "
+                  alt="MBTC-CryoGuardTM"
                 />
               </div>
               <ul class="app__list">

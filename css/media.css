@@ -43,6 +43,11 @@
   .tri-right {
     display: none;
   }
+
+  .app__item:nth-child(6) .app-item__bullets,
+  .app__item:nth-child(3) .app-item__bullets {
+    top: 55%;
+  }
 }
 @media screen and (max-width: 999px) {
   html {
@@ -81,11 +86,8 @@
   .biohazards__content {
     grid-template-columns: repeat(1, 1fr);
   }
-  .app {
-    overflow-x: scroll;
-  }
-  .app__inner {
-    height: 500px;
+
+  .app__content {
     min-width: 700px;
     width: 68.8vw;
     margin: 0 auto;
