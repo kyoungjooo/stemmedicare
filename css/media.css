@@ -8,7 +8,9 @@
   .container--md {
     padding-inline: 100px;
   }
-
+  .pc {
+    display: none;
+  }
   .news-notice__link {
     aspect-ratio: auto;
   }
@@ -96,6 +98,9 @@
 @media screen and (max-width: 767px) {
   html {
     font-size: 8px;
+  }
+  .page-nav__inner {
+    justify-content: unset;
   }
   .page-container {
     padding-block: 7.2em 9.4em;
@@ -197,6 +202,7 @@
   .banner__title {
     font-size: 3.4rem;
   }
+
   .pipeline__cards {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -208,6 +214,9 @@
   }
   .core-overview .item__text {
     font-size: 2rem;
+  }
+  .core-tech__desc {
+    width: 100%;
   }
   .current-tech__process {
     border-radius: 1.4em;

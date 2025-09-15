@@ -21,11 +21,14 @@
 
 html {
   font-size: 10px;
+  min-width: 350px;
 }
 body {
   line-height: 1.5;
   font-family: "Pretendard", sans-serif;
   font-weight: 400;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 .hidden {
@@ -76,7 +79,7 @@ body {
   font-weight: 600;
 }
 .scroll {
-  overflow-x: auto;
+  overflow-x: scroll;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
   scrollbar-gutter: stable both-edges;
@@ -147,10 +150,15 @@ body {
 .page-nav {
   border-bottom: 1px solid var(--gray-02);
 }
+.page-nav__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .page-nav__list {
   display: flex;
-  justify-content: center;
   justify-content: flex-start;
+  flex-wrap: nowrap;
 }
 .page-nav__item {
   font-size: 2rem;
@@ -176,6 +184,7 @@ body {
   top: 50%;
   transform: translateY(-50%);
 }
+
 /* main */
 /* ********** banner ********** */
 
@@ -298,6 +307,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  padding-bottom: 14px;
 }
 .pipeline-card__icon {
   width: 100%;
@@ -344,7 +355,7 @@ body {
   width: 18px;
   height: 18px;
   margin: 0 auto;
-  position: relative;
+  position: absolute;
   z-index: 0;
   bottom: 14px;
 }
@@ -536,6 +547,7 @@ body {
   border: 0;
   border-radius: 0;
   background-color: #eeeeee;
+  cursor: pointer;
 }
 .core-tech__btn--next {
   background-color: #e3e3e3;
@@ -613,6 +625,7 @@ body {
   padding: 2.8em;
   box-sizing: border-box;
   position: relative;
+  cursor: pointer;
 }
 
 .news-notice__link:first-child {
@@ -932,10 +945,17 @@ body {
   color: currentColor;
 }
 .core-overview .table__item {
-  background-color: #f9f9f5;
   display: grid;
   grid-template-rows: subgrid;
   grid-row: span 5;
+}
+.core-overview .table__item:nth-child(odd) {
+  background-color: #f9f9f5;
+}
+
+/* 짝수 카드만 테두리 색 변경 */
+.core-overview .table__item:nth-child(even) {
+  background-color: #fcfcfc;
 }
 
 .core-overview .table-item__body {
@@ -1005,6 +1025,7 @@ body {
   align-items: center;
   justify-content: center;
   color: var(--gray-04);
+  text-align: center;
 }
 .table__item .table-item__header:before {
   content: "";
@@ -1035,7 +1056,13 @@ body {
 .table__item .table-item__flag {
   background-image: url("../assets/images/core/korea.png");
 }
-
+.table__item .table-item__flag.flag-jp {
+  background-image: url("../assets/images/core/japen.png");
+  transform: scale(1.2);
+}
+.table__item .table-item__flag.flag-us {
+  background-image: url("../assets/images/core/us.png");
+}
 .table-item__award {
   margin-inline: 6px;
   text-align: center;
@@ -1561,6 +1588,8 @@ body {
   border: 1px solid var(--gray-02);
   border-radius: 1em;
   padding: 5em;
+  display: flex;
+  justify-content: center;
 }
 .platform-tech__graph img {
   min-width: 700px;

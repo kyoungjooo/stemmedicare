@@ -20,8 +20,33 @@
         desc="We have developed and established all core technologies by ourselves for &#10; the whole process from R&amp;D to mass production of immune-tolerized EV therapeutics."
       >
       </page-banner>
-      <section class="container--md container page-container font-roboto-co">
-        <div class="font-teko">
+      <nav class="page-nav" aria-label="sub-navigation">
+        <div class="page-nav__inner scroll container container--md">
+          <ul class="page-nav__list font-teko">
+            <li class="page-nav__item">
+              <a class="page-nav__link" href="/core-overview.html">OVERVIEW</a>
+            </li>
+            <li class="page-nav__item active">
+              <a
+                class="page-nav__link"
+                href="/core-fbs.html"
+                aria-current="page"
+              >
+                FBS &amp; DMSO-FREE CRYOPRESERVATION
+              </a>
+            </li>
+            <li class="page-nav__item">
+              <a class="page-nav__link" href="/core-mass.html"
+                >MASS PRODUCTION OF EVS</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- core-fbs -->
+      <main class="container--md container page-container font-roboto-co">
+        <!-- page-header 영역 -->
+        <div class="page-header font-teko">
           <div class="page-datail__inner">
             <span class="page-datail__sub">Core Technology</span>
             <h2 class="page-datail__title">FBS & DMSO-free Cryopreservation</h2>
@@ -37,10 +62,17 @@
             </p>
           </div>
         </div>
-        <section class="current-tech page-section" tabindex="-1">
+        <!-- current-tech -->
+        <section
+          class="current-tech page-section"
+          aria-labelledby="current-tech-title"
+        >
           <div class="current-tech__inner">
             <div class="current-tech__content">
-              <h2 class="current-tech__title font-roboto-co">
+              <h2
+                id="current-tech-title"
+                class="current-tech__title font-roboto-co"
+              >
                 Current Technology
               </h2>
 
@@ -147,8 +179,12 @@
             </div>
           </div>
         </section>
-        <section class="biohazards page-section">
-          <h3 class="page-datail__sub-title">
+        <!-- biohazards -->
+        <section
+          class="biohazards page-section"
+          aria-labelledby="biohazards-title"
+        >
+          <h3 id="biohazards-title" class="page-datail__sub-title">
             Biohazards of cryopreservatives containing FBS and DMSO
           </h3>
           <div class="biohazards__inner">
@@ -222,8 +258,9 @@
             </div>
           </div>
         </section>
-        <section class="mbtc page-section">
-          <h3 class="page-datail__sub-title">
+        <!-- mbtc -->
+        <section class="mbtc page-section" aria-labelledby="mbtc-title">
+          <h3 id="mbtc-title" class="page-datail__sub-title">
             MBTC-CryoGuardTM (FBS-free, DMSO-free, -80℃ applicable)
           </h3>
           <p class="page-datail__desc font-roboto-co">
@@ -325,20 +362,22 @@
             </ul>
           </div>
         </section>
-        <section class="app" tabindex="-1">
-          <h4 class="app__title sub-title">Application</h4>
+        <!-- application -->
+        <section class="app" aria-labelledby="app-title">
+          <h4 id="app-title" class="app__title sub-title">Application</h4>
           <div class="app__inner scroll">
             <div class="app__content">
-              <div class="app__circle" aria-label="hidden">
+              <div class="app__circle" aria-hidden="true">
                 <img
                   class="circle-image"
                   src="./assets/images/core/app.png"
                   srcset="
-                    ./assets/images/core/app.png x1,
-                    ./assets/images/core/app@2x.png x2,
-                      ./assets/images/core/app@3x.png x3
+                    ./assets/images/core/app.png    1x,
+                    ./assets/images/core/app@2x.png 2x,
+                    ./assets/images/core/app@3x.png 3x
                   "
                   alt="MBTC-CryoGuardTM"
+                  loading="lazy"
                 />
               </div>
               <ul class="app__list">
@@ -467,7 +506,7 @@
             </div>
           </div>
         </section>
-      </section>
+      </main>
       <site-footer></site-footer>
     </div>
   </body>
