@@ -1,4 +1,5 @@
-const template = `
+(() => {
+  const template = `
  <footer class="footer">
       <div class="footer__inner">
         <ul class="footer__nav">
@@ -48,9 +49,10 @@ const template = `
     </footer>
 `;
 
-class SiteFooter extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML = template;
+  class SiteFooter extends HTMLElement {
+    connectedCallback() {
+      this.innerHTML = template;
+    }
   }
-}
-customElements.define("site-footer", SiteFooter);
+  customElements.define("site-footer", SiteFooter);
+})();
